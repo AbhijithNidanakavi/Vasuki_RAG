@@ -14,7 +14,7 @@ The project encompasses several key components and stages:
 		
 	2. Utilizing Pre-Trained Language Models:
 	
-		○ Transformer Models: Leveraging advanced models like FLAN-T5 for tasks including summarization, translation, and question answering.
+		○ Transformer Models: Leveraging advanced models for tasks including summarization, translation, and question answering.
 		○ Model Fine-Tuning: Customizing pre-trained models on specific datasets to improve performance in targeted applications.
 		
 	3. Building Vasuki – A Proof of Concept:
