@@ -3,6 +3,8 @@ Vasuki leverages advanced NLP and NLU capabilities to provide seamless and intel
 
 The driving force behind my engagement in these projects is a relentless pursuit of knowledge and a commitment to staying abreast of the latest technological advancements. As I actively seek new opportunities in the job market, I am confident that these projects will serve as significant milestones in my career journey.
 
+![image](https://github.com/AbhijithNidanakavi/Vasuki/assets/91921508/d9f5895f-00c3-48f1-8e38-cedf0f5d977c)
+
 Project Overview :
 
 The project encompasses several key components and stages:
@@ -36,8 +38,6 @@ The project encompasses several key components and stages:
 		○ Cloud Deployment: Implementing the chatbot on cloud platforms to ensure scalability and accessibility for users.
 		○ User Experience: Focusing on delivering a seamless and engaging user interface.
 
-
-![image](https://github.com/AbhijithNidanakavi/Vasuki/assets/91921508/d9f5895f-00c3-48f1-8e38-cedf0f5d977c)
 
 While Vasuki may not match the budget, scope, or hardware resources of models like ChatGPT and Gemini, it serves as a testament to my ability to deliver advanced conversational agents. By fine-tuning transformers, building intuitive user interfaces, and deploying solutions on the cloud, I aim to demonstrate my capability to create impactful AI solutions. This project not only highlights my technical expertise but also my dedication to continuous learning and innovation in the field of artificial intelligence and machine learning.!
 
