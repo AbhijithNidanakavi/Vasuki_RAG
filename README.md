@@ -39,5 +39,8 @@ The project encompasses several key components and stages:
 
 ![image](https://github.com/AbhijithNidanakavi/Vasuki/assets/91921508/d9f5895f-00c3-48f1-8e38-cedf0f5d977c)
 
+While Vasuki may not match the budget, scope, or hardware resources of models like ChatGPT and Gemini, it serves as a testament to my ability to deliver advanced conversational agents. By fine-tuning transformers, building intuitive user interfaces, and deploying solutions on the cloud, I aim to demonstrate my capability to create impactful AI solutions. This project not only highlights my technical expertise but also my dedication to continuous learning and innovation in the field of artificial intelligence and machine learning.!
+
+
 
 ...development in progress ..
