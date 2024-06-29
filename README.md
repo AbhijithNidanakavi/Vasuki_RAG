@@ -5,7 +5,7 @@ The driving force behind my engagement in these projects is a relentless pursuit
 
 ![image](https://github.com/AbhijithNidanakavi/Vasuki/assets/91921508/d9f5895f-00c3-48f1-8e38-cedf0f5d977c)
 
-Project Overview : (High_level view .. rough..)
+Project Overview : (High_level view .. rough/draft..)
 
 The project encompasses several key components and stages:
 
