@@ -1,4 +1,5 @@
-#Vasuki _ ChatMate
+# Vasuki _ ChatMate
+
 Vasuki leverages advanced NLP and NLU capabilities to provide seamless and intelligent interactions. It is designed to understand, process, and respond to user queries with remarkable accuracy, making it an invaluable tool for various applications ranging from customer support to personal assistance and beyond.
 
 The driving force behind my engagement in these projects is a relentless pursuit of knowledge and a commitment to staying abreast of the latest technological advancements. As I actively seek new opportunities in the job market, I am confident that these projects will serve as significant milestones in my career journey.
