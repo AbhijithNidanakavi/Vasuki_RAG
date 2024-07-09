@@ -14,9 +14,9 @@ from langchain.embeddings import SentenceTransformerEmbeddings
 #from langchain.vectorstores import Chroma 
 from langchain.vectorstores import Chroma
 #from langchain_community.vectorstores import Chroma
-#from langchain.chat_models import ChatOpenAI
+from langchain.chat_models import ChatOpenAI
 
-from langchain_community.chat_models import ChatOpenAI
+#from langchain_community.chat_models import ChatOpenAI
 from langchain.chains.question_answering import load_qa_chain
 
 st.title("✨ Hi, I'm Vasuki ! your new AI-powered ChatMate -Upload Docs, Ask Questions & Get Answers ✨")
