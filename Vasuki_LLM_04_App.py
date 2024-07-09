@@ -6,14 +6,14 @@ from glob import glob
 from datetime import datetime
 
 import streamlit as st 
-#from langchain.document_loaders import DirectoryLoader
-from langchain_community.document_loaders import DirectoryLoader
+from langchain.document_loaders import DirectoryLoader
+#from langchain_community.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-#from langchain.embeddings import SentenceTransformerEmbeddings
-from langchain_community.embeddings import SentenceTransformerEmbeddings
+from langchain.embeddings import SentenceTransformerEmbeddings
+#from langchain_community.embeddings import SentenceTransformerEmbeddings
 #from langchain.vectorstores import Chroma 
-#from langchain.vectorstores import Chroma
-from langchain_community.vectorstores import Chroma
+from langchain.vectorstores import Chroma
+#from langchain_community.vectorstores import Chroma
 #from langchain.chat_models import ChatOpenAI
 
 from langchain_community.chat_models import ChatOpenAI
