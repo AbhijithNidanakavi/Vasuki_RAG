@@ -42,6 +42,8 @@ The project encompasses several key components and stages:
 
 While Vasuki may not match the budget, scope, or hardware resources of models like ChatGPT and Gemini, it serves as a testament to my ability to deliver advanced conversational agents. By fine-tuning transformers, building intuitive user interfaces, and deploying solutions on the cloud, I aim to demonstrate my capability to create impactful AI solutions. This project not only highlights my technical expertise but also my dedication to continuous learning and innovation in the field of artificial intelligence and machine learning.!
 
+[https://vasuki-chatmate.streamlit.a](https://vasuki-chatmate.streamlit.app/)
 
+.. finetuning still in progress ..
 
 ...development in progress ..
