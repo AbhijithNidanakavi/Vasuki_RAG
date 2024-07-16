@@ -24,7 +24,9 @@ from langchain.chat_models import ChatOpenAI
 
 #from langchain_community.chat_models import ChatOpenAI
 from langchain.chains.question_answering import load_qa_chain
+from PIL import Image
 
+image = Image.open("Vasuki_logo.png")
 st.markdown("✨Greetings! I'm Vasuki, your AI powered ChatMate. Upload, Inquire, and Discover Answers Fast.✨")
 
 openai.api_key = st.secrets['OPENAI_API_KEY']
