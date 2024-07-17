@@ -27,6 +27,7 @@ from langchain.chains.question_answering import load_qa_chain
 from PIL import Image
 
 image = Image.open("Vasuki_logo.png")
+st.Image(image)
 st.markdown("✨Greetings! I'm Vasuki, your AI powered ChatMate. Upload, Inquire, and Discover Answers Fast.✨")
 
 openai.api_key = st.secrets['OPENAI_API_KEY']
@@ -161,4 +162,4 @@ last_db_updated = hashlib.md5(','.join(curr_dir).encode()).hexdigest()
 if curr_dir and len(curr_dir):
      start_chatmate()
 else :
-     st.header("No Knowledge Base Loaded, Please use the left menu to start")
+     st.markdown("⚠️ No Knowledge Base Loaded, Please use the left menu to start ❗")
