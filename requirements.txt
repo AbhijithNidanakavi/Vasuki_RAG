@@ -13,3 +13,4 @@ rouge_score==0.1.2
 loralib==0.1.1
 peft==0.3.0
 pysqlite3-binary
+unstructured[pdf]
