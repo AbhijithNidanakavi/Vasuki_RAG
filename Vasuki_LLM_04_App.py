@@ -100,7 +100,7 @@ def get_answer(query:str,db,chain):
      Queries the model with given question & returns the answer
     
      """
-     prompt_instructions = """ Your personal name is Vasuki, a highly intelligent and helpful AI assistant. Please provide a detailed and thorough response to the following query. Ensure that the answer is clear, concise, and includes examples where appropriate. If the user asks for a summary, provide a detailed summary of the uploaded document. """
+     prompt_instructions = """ Your personal name is Vasuki, a highly intelligent and helpful AI assistant. If anyone asks your name, remember to say your name is Vasuki. Please provide a detailed and thorough response to the following query. Ensure that the answer is clear, concise, and includes examples where appropriate. If the user asks for a summary, provide a detailed summary of the uploaded document. """
      modified_query = f"{prompt_instructions}\n{query}"
      
      matching_docs_score = db.similarity_search_with_score(modified_query)
