@@ -168,3 +168,38 @@ if curr_dir and len(curr_dir):
      start_chatmate()
 else :
      st.markdown("⚠️ No Knowledge Base Loaded, Please use the left menu to start ❗")
+
+import inspect, random, re, os
+from typing import Optional
+
+from langchain import LLMChain
+from langchain.chains import LLMChain, LLMMathChain, SequentialChain, TransformChain
+
+from langchain.chat_models import ChatOpenAI
+from langchain.llms import OpenAI
+from langchain.output_parsers import PydanticOutputParser
+from langchain.prompts import PromptTemplate
+from langchain.pydantic_v1 import BaseModel, Field, validator
+from langchain.tools import Tool
+import warnings
+warnings.filterwarnings('ignore')
+
+from tempfile import template
+from langchain import PromptTemplate
+
+template = """ Question: {question} 
+               Answer:"""
+prompt = PromptTemplate(template=template, input_variables=['question'])
+question = 'What kind of music do you like, also suggest me few hit albums'        
+
+prompt.format(question=question)
+
+from langchain.chat_models import ChatOpenAI
+
+model_name = "gpt-3.5-turbo"
+temperature = 0.6
+llm = ChatOpenAI(model_name=model_name, temperature=temperature)
+
+llm_chain = LLMChain(prompt=prompt, llm=llm)
+
+print(llm_chain.run(question))
