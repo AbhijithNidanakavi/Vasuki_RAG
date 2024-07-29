@@ -128,6 +128,6 @@ While Vasuki may not match the budget, scope, or hardware resources of models li
 
 [https://vasuki-chatmate.streamlit.a](https://vasuki-chatmate.streamlit.app/)
 
-.. finetuning still in progress ..
+
 
 ...development in progress ..
