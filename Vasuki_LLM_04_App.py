@@ -32,7 +32,7 @@ with col1:
      st.image(image,use_column_width=True)
 #st.image(image)
 with col2:
-     st.title('Vasuki ChatMate')
+     st.title('ChatMate')
 st.markdown("✨Greetings! I'm Vasuki, your AI powered ChatMate. Upload, Inquire, and Discover Answers Fast.✨")
 
 openai.api_key = st.secrets['OPENAI_API_KEY']
