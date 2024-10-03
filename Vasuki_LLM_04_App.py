@@ -10,6 +10,8 @@ from datetime import datetime
 
 from dotenv import load_dotenv
 
+import nltk
+nltk.download('punkt')
 
 #import chromadb
 import streamlit as st 
@@ -55,7 +57,7 @@ def load_docs(directory:str):
      documents = loader.load()
      return documents
 
-def split_docs(documents, chunk_size=1000, chunk_overlap=20):
+def split_docs(documents, chunk_size=10000, chunk_overlap=20):
      """
 #     Splits the docs into chunks
     
@@ -64,7 +66,7 @@ def split_docs(documents, chunk_size=1000, chunk_overlap=20):
      docs = text_splitter.split_documents(documents)
      return docs
 
-@st.cache_resource
+#@st.cache_resource
 
 def startup_event(last_update:str):
      """
@@ -98,9 +100,8 @@ def startup_event(last_update:str):
 def get_answer(query:str,db,chain):
      """ 
      Queries the model with given question & returns the answer
-    
      """
-     prompt_instructions = """ Your personal name is Vasuki, a highly intelligent and helpful AI assistant. If anyone asks your name, remember to say your name is Vasuki. Please provide a detailed and thorough response to the following query. Ensure that the answer is clear, concise, and includes examples where appropriate. If the user asks for a summary, provide a detailed summary of the uploaded document. """
+     prompt_instructions = """ You are a Q&A assistant named Vasuki. If anyone asks your name, remember to say your name is Vasuki. Please provide a detailed and thorough response to the following query. Ensure that the answer is clear, concise, and includes examples where appropriate. For all other inquiries, your main goal is to provide answers as accurately as possible, based on the instructions and context you have been given. If a question does not match the provided context or is outside the scope of the document, kindly advise the user to ask questions within the context of the document. If the user asks for a summary of the attached document, provide a detailed summary of the uploaded document. """
      modified_query = f"{prompt_instructions}\n{query}"
      
      matching_docs_score = db.similarity_search_with_score(modified_query)
@@ -168,38 +169,3 @@ if curr_dir and len(curr_dir):
      start_chatmate()
 else :
      st.markdown("⚠️ No Knowledge Base Loaded, Please use the left menu to start ❗")
-
-import inspect, random, re, os
-from typing import Optional
-
-from langchain import LLMChain
-from langchain.chains import LLMChain, LLMMathChain, SequentialChain, TransformChain
-
-from langchain.chat_models import ChatOpenAI
-from langchain.llms import OpenAI
-from langchain.output_parsers import PydanticOutputParser
-from langchain.prompts import PromptTemplate
-from langchain.pydantic_v1 import BaseModel, Field, validator
-from langchain.tools import Tool
-import warnings
-warnings.filterwarnings('ignore')
-
-from tempfile import template
-from langchain import PromptTemplate
-
-template = """ Question: {question} 
-               Answer:"""
-prompt = PromptTemplate(template=template, input_variables=['question'])
-question = 'What kind of music do you like, also suggest me few hit albums'        
-
-prompt.format(question=question)
-
-from langchain.chat_models import ChatOpenAI
-
-model_name = "gpt-3.5-turbo"
-temperature = 0.6
-llm = ChatOpenAI(model_name=model_name, temperature=temperature)
-
-llm_chain = LLMChain(prompt=prompt, llm=llm)
-
-print(llm_chain.run(question))
