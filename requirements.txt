@@ -15,3 +15,4 @@ peft==0.3.0
 pysqlite3-binary
 unstructured[pdf]
 unstructured==0.10.16
+libsqlite3-dev
