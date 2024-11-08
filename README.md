@@ -128,8 +128,4 @@ While Vasuki may not match the budget, scope, or hardware resources of models li
 
 [https://vasuki-chatmate.streamlit.a](https://vasuki-chatmate.streamlit.app/)
 
-
-
-...development in progress ..
-
 .. Get ready to experience the future of AI conversations with Vasuki—your new intelligent ChatMate!
